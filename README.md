@@ -22,6 +22,12 @@ Just a blurry pic for now. Detailed pictures and wiring diagram coming!
 
 ![signal-2023-04-28-162611_002](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/6e090ee9-10ba-4bc1-ab57-85cdfae79de4)
 
+![IMG_20230515_084211_920](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/b8a4c548-c528-42e0-8ba1-7a15a9be3684)
+
+![IMG_20230515_084239_274](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/1768dae6-b94d-4cf1-9479-0d659a608b5a)
+
+![IMG_20230515_084315_530](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/ebeb40b2-7e9e-4a95-b991-78dbc190b17c)
+
 How to build the hardware:
 * TBD
 
