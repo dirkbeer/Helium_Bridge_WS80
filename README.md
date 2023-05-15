@@ -18,6 +18,8 @@ Notes:
 * The 5V solar panel is connected directly to the LoRa32 boards mirco USB port. Voltage should not exceed 5.8V (maximum voltage for CP2104 VBUS).
   The https://github.com/merbanan/rtl_433 repository has information on decoding WS80 data packets (and those from many other devices). 
 
+![signal-2023-04-28-162611_002](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/6e090ee9-10ba-4bc1-ab57-85cdfae79de4)
+
 How to build the hardware:
 * TBD
 
