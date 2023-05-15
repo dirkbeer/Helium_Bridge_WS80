@@ -1,8 +1,30 @@
 # Helium_Bridge
 
-This repository contains Helium_Bridge for the Ecowitt WS80, an application bridges FSK-encoded signals from that weather station to the Helium LoRaWAN network. It is a modified version of the LMIC-node.cpp example application with additional libraries and code to receive, process, and uplink WS80 data to Helium.
+This repository contains Helium_Bridge, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
-The https://github.com/merbanan/rtl_433 repository has information on decoding WS80 data packets (and those from many other devices). Josef de Beer at SDHGPA wrote much of the code used here to read those packets with a TI CC1101 module and to sample and average the data before retransmission. 
+The current code and Helium Bridge hardware receives and uplinks data packets from Ecowitt WS80 weather stations. The WS80 transmits FSK-encoded signals in the sub-1GHz ISM bands (915MHz for US versions). This hardware and code receives, averages, and uplinks WS80 data to Helium.
+
+The hardware used includes:
+
+* LILYGO® TTGO LoRa32 V2.1_1.6 https://www.lilygo.cc/products/lora3
+* CC1101 433MHz Green Tranceiver Module https://www.ebay.com/itm/311955775989?var=610749871056
+* MakerFocus 3.7V Lithium Rechargeable Battery w/ JST1.25 Connector 2pin & Protection Board https://www.amazon.com/gp/product/B07CXNQ3ZR
+* Treedix 5V 150mA Polysilicon Solar Panel https://www.amazon.com/gp/product/B0831CMJB9
+* uxcell 5-Pin Micro USB Type B Male Connector https://www.amazon.com/gp/product/B014GMP4E4
+* Protoboard, pin connectors and sockets, wire
+
+Notes: 
+* We used the 433MHz CC1101 module because it has sufficient range to the WS80 (~10m) even when operated at 915MHz, and has much easier-to-use pin connectors than the other available modules.
+* The 5V solar panel is connected directly to the LoRa32 boards mirco USB port. Voltage should not exceed 5.8V (maximum voltage for CP2104 VBUS).
+  The https://github.com/merbanan/rtl_433 repository has information on decoding WS80 data packets (and those from many other devices). 
+
+How to build the hardware:
+* TBD
+
+How to run the software:
+* TBD
+
+Josef de Beer at SDHGPA wrote much of the code used to receive and process WS80 packets using the TI CC1101 module. 
 
 Copyright (c) 2023 Dirk Beer and Gristle King Inc
 
