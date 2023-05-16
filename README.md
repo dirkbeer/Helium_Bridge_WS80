@@ -36,7 +36,7 @@ How to build the hardware:
 
 
 How to run the software:
-* TBD
+* TBD. For now, see the original LMIC-node Readme below.
 
 Josef de Beer at SDHGPA wrote much of the code used to receive and process WS80 packets using the TI CC1101 module. 
 
