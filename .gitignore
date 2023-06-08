@@ -19,6 +19,11 @@ keyfiles/**
 /lib/
 /include/
 
-# 
-/pcb/
+#
+*.gbr
+*.gbrjob
+*.drl
+*.zip
+*.dsn
+fp-info-cache 
 /other/
