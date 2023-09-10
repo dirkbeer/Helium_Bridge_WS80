@@ -221,6 +221,32 @@ bool WS80::Init()
         Serial.println("CC1101 Connection Error");
         return false;
     }
+/*
+        .name        = "Acurite 592TXR Temp/Humidity, 592TX Temp, 5n1 Weather Station, 6045 Lightning, 899 Rain, 3N1, Atlas",
+        .modulation  = OOK_PULSE_PWM,
+        .short_width = 220,  // short pulse is 220 us + 392 us gap
+        .long_width  = 408,  // long pulse is 408 us + 204 us gap
+        .sync_width  = 620,  // sync pulse is 620 us + 596 us gap
+        .gap_limit   = 500,  // longest data gap is 392 us, sync gap is 596 us
+        .reset_limit = 4000, // packet gap is 2192 us
+        .decode_fn   = &acurite_txr_callback,
+        .fields      = acurite_txr_output_fields,
+*/
+    ELECHOUSE_cc1101.Init();              // must be set to initialize the cc1101!
+    ELECHOUSE_cc1101.setCCMode(1);       // set config for internal transmission mode.
+    ELECHOUSE_cc1101.setModulation(2);  // set modulation mode. 0 = 2-FSK, 1 = GFSK, 2 = ASK/OOK, 3 = 4-FSK, 4 = MSK.
+    ELECHOUSE_cc1101.setMHZ(433.92);   // Here you can set your basic frequency. The lib calculates the frequency automatically (default = 433.92).The cc1101 can: 300-348 MHZ, 387-464MHZ and 779-928MHZ. Read More info from datasheet.
+    ELECHOUSE_cc1101.setSyncMode(2);  // Combined sync-word qualifier mode. 0 = No preamble/sync. 1 = 16 sync word bits detected. 2 = 16/16 sync word bits detected. 3 = 30/32 sync word bits detected. 4 = No preamble/sync, carrier-sense above threshold. 5 = 15/16 + carrier-sense above threshold. 6 = 16/16 + carrier-sense above threshold. 7 = 30/32 + carrier-sense above threshold.
+    ELECHOUSE_cc1101.setCrc(1);      // 1 = CRC calculation in TX and CRC check in RX enabled. 0 = CRC disabled for TX and RX.
+
+/*
+        .name        = "Fine Offset Electronics WS80 weather station",
+        .modulation  = FSK_PULSE_PCM,
+        .short_width = 58,
+        .long_width  = 58,
+        .reset_limit = 1500,
+        .decode_fn   = &fineoffset_ws80_decode,
+        .fields      = output_fields,
 
     ELECHOUSE_cc1101.Init();                  // must be set to initialize the cc1101!
     ELECHOUSE_cc1101.setModulation(0);        // set modulation mode. 0 = 2-FSK, 1 = GFSK, 2 = ASK/OOK, 3 = 4-FSK, 4 = MSK.
@@ -243,7 +269,7 @@ bool WS80::Init()
     ELECHOUSE_cc1101.SpiWriteReg(CC1101_MDMCFG2, 0x02);  // 16/16 sync word bits detected
     ELECHOUSE_cc1101.SpiWriteReg(CC1101_PKTCTRL0, 0x04); // Fixed packet length CRC enabled
     ELECHOUSE_cc1101.setPacketLength(32);                // Indicates the packet length when fixed packet length mode is enabled. If variable packet length mode is used, this value indicates the maximum packet length allowed.
-
+*/
     ELECHOUSE_cc1101.SetRx(); // set Receive on
 
     // attachInterrupt(digitalPinToInterrupt(GDO0_PIN), packetReceived, RISING);
