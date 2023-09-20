@@ -26,6 +26,8 @@ The Helium Bridge in action, data displayed using Uplink Engine (https://uplinke
 How to build the hardware:
 * TBD
 
+![image](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/5d8d7d1a-ada7-4452-b835-703ae244a754)
+
 ![IMG_20230515_084211_920](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/b8a4c548-c528-42e0-8ba1-7a15a9be3684)
 
 ![IMG_20230515_084239_274](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/1768dae6-b94d-4cf1-9479-0d659a608b5a)
