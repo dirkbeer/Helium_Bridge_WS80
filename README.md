@@ -4,6 +4,8 @@ This repository contains Helium_Bridge, an application that bridges sensor signa
 
 The current code and Helium Bridge hardware receives and uplinks data packets from Ecowitt WS80 weather stations. The WS80 transmits FSK-encoded signals in the sub-1GHz ISM bands (915MHz for US versions). This hardware and code receives, averages, and uplinks WS80 data to Helium.
 
+This work is sponsored by a grant from the Helium Foundation (https://www.helium.foundation/).
+
 The hardware used includes:
 
 * LILYGO® TTGO LoRa32 V2.1_1.6 https://www.lilygo.cc/products/lora3
