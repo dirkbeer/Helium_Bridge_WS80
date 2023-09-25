@@ -25,11 +25,10 @@ Notes:
 The Helium Bridge in action, data displayed using Uplink Engine (https://uplinkengine.com/) on MeteoScientific (https://meteoscientific.com/).
 
 ![signal-2023-04-28-162611_002](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/6e090ee9-10ba-4bc1-ab57-85cdfae79de4)
+![image](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/27438190-222d-48dc-9945-5c31a73d4f2c)
 
 How to build the hardware:
 * TBD
-
-![image](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/5d8d7d1a-ada7-4452-b835-703ae244a754)
 
 ![IMG_20230515_084211_920](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/b8a4c548-c528-42e0-8ba1-7a15a9be3684)
 
