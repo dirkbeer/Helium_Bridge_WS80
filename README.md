@@ -1,6 +1,6 @@
 # Helium_Bridge_WS80
 
-(Note: This version of Helium Bridge is no longer maintained, the new version is at [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge). The PCB design in that repository can still be used for this code.)
+### Note: This version of Helium Bridge is no longer maintained. The [new version](https://github.com/dirkbeer/Helium-Bridge) can bridge multiple sensors. The updated PCB design there works for both.
 
 This repository contains Helium_Bridge_WS80, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
@@ -25,7 +25,6 @@ Notes:
 The Helium Bridge in action, data displayed using Uplink Engine (https://uplinkengine.com/) on MeteoScientific (https://meteoscientific.com/).
 
 ![signal-2023-04-28-162611_002](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/6e090ee9-10ba-4bc1-ab57-85cdfae79de4)
-![image](https://github.com/dirkbeer/Helium_Bridge_WS80/assets/6425332/27438190-222d-48dc-9945-5c31a73d4f2c)
 
 How to build the hardware:
 * TBD
