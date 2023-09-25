@@ -1,6 +1,8 @@
-# Helium_Bridge
+# Helium_Bridge_WS80
 
-This repository contains Helium_Bridge, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
+(Note: This version of Helium Bridge is no longer maintained, the new version is at [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge))
+
+This repository contains Helium_Bridge_WS80, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
 The current code and Helium Bridge hardware receives and uplinks data packets from Ecowitt WS80 weather stations. The WS80 transmits FSK-encoded signals in the sub-1GHz ISM bands (915MHz for US versions). This hardware and code receives, averages, and uplinks WS80 data to Helium.
 
