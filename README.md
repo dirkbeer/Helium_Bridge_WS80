@@ -1,6 +1,6 @@
 # Helium_Bridge_WS80
 
-(Note: This version of Helium Bridge is no longer maintained, the new version is at [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge))
+(Note: This version of Helium Bridge is no longer maintained, the new version is at [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge). The PCB design in that repository can still be used for this code.)
 
 This repository contains Helium_Bridge_WS80, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
