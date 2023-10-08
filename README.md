@@ -1,12 +1,12 @@
 # Helium_Bridge_WS80
 
-### Note: This version of Helium Bridge is no longer maintained. The [new version](https://github.com/dirkbeer/Helium-Bridge) can bridge multiple sensors. The updated PCB design there works for both.
+### Note: This is a specialized version of Helium Bridge for the Ecowitt/Fine Ofsset WS-80 Weather Station. See the [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge) repository for the more universal Bridge that can bridge multiple sensors. The PCB design provided there works for both.
 
 This repository contains Helium_Bridge_WS80, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
 The current code and Helium Bridge hardware receives and uplinks data packets from Ecowitt WS80 weather stations. The WS80 transmits FSK-encoded signals in the sub-1GHz ISM bands (915MHz for US versions). This hardware and code receives, averages, and uplinks WS80 data to Helium.
 
-This work is sponsored by a grant from the Helium Foundation (https://www.helium.foundation/).
+The Helium Bridge software and PCB design was sponsored by an innovation grant from the [Helium Foundation](https://www.helium.foundation/) to be made available open source. This work is freely available for use under its [MIT License](https://github.com/dirkbeer/Helium-Bridge/blob/main/LICENSE), copyright (c) 2023 Dirk Beer and [Gristle King, Inc](https://gristleking.com/). 
 
 The hardware used includes:
 
