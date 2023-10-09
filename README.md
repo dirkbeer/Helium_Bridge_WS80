@@ -1,6 +1,6 @@
 # Helium_Bridge_WS80
 
-### Note: This is a specialized version of Helium Bridge for the Ecowitt/Fine Ofsset WS-80 Weather Station. See the [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge) repository for the more universal Bridge that can bridge multiple sensors. The PCB design provided there works for both.
+### Note: This is a specialized version of Helium Bridge for the Ecowitt/Fine Ofsset WS-80 Weather Station. It includes data processing and sleep features to optimize for low-power off-grid use. See the [Helium-Bridge](https://github.com/dirkbeer/Helium-Bridge) repository for the more universal Bridge that can bridge multiple sensors. The PCB design provided there works for both.
 
 This repository contains Helium_Bridge_WS80, an application that bridges sensor signals from industrial, scientific, and medical (ISM) devices to the Helium LoRaWAN network. The code is currently based on https://github.com/lnlp/LMIC-node with additional libraries and code to receive, process, and uplink ISM band data to Helium.
 
